@@ -1,0 +1,4 @@
+baseURL = "https://askingyj.cn/"
+languageCode = "zh-cn"
+title = "ASKINGYJ"
+theme = "ananke"
