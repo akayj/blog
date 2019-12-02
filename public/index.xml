@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ASKINGYJ</title>
+    <link>https://askingyj.cn/</link>
+    <description>Recent content on ASKINGYJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 02 Dec 2019 17:47:24 +0800</lastBuildDate>
+    
+	<atom:link href="https://askingyj.cn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>个人博客建站</title>
+      <link>https://askingyj.cn/posts/first-blog/</link>
+      <pubDate>Mon, 02 Dec 2019 17:47:24 +0800</pubDate>
+      
+      <guid>https://askingyj.cn/posts/first-blog/</guid>
+      <description>为什么建博客 工作很多年了，一直都用笔记(印象笔记)记录日常，灵光一现的点子和行日常行程。 这种方式比较好地满足了我 记录 的要求，比方 markdown 格式、日程提醒和TODO列表、微信收藏。
+我的内容多偏于想法和实践类的，而规划类的内容少，所以更需求一种 分享 方式， 进而产生评价和交流。对自己也可以好好审视内容，而不是收藏而已，督促自己做好知识的消化。
+博客 是一种 古老而稳定 的方式，能很好的满足我的分享的要求，除此外，一个没有博客的技术人，不是一个好技术人 :joy:。
+选型 wordpress 是流行全球的博客软件，功能强大，插件完善，但是不符合我的“口味”， 静态博客 + Markdown 才是我的菜, 具体的选型如下:
+http server: Caddy
+静态生成器: Hugo</description>
+    </item>
+    
+  </channel>
+</rss>
