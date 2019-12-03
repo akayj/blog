@@ -1,0 +1,28 @@
+baseURL = "https://askingyj.cn/"
+languageCode = "zh-CN"
+title = "Askingyj's Blog"
+theme = "yinyang"
+enableEmoji=true
+
+[params]
+headTitle = "AskingYJ"
+[[params.socials]]
+name = "About Me"
+# link = "https://www.askingyj.cn/about"
+[[params.socials]]
+name = "Github"
+link = "https://github.com/akayj"
+
+[permalinks]
+  posts = "/:year/:month/:title/"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "github"
+    tabWidth = 4
