@@ -1,9 +1,7 @@
 ---
-title: "代码高亮"
+title: "代码语法高亮"
 date: 2019-12-03T16:19:07+08:00
 ---
-
-_Emacs_ style:
 
 ```go
 // GetTitleFunc returns a func that can be used to transform a string
@@ -21,5 +19,21 @@ func GetTitleFunc(style string) func(s string) string {
 		default:
 			return transform.NewTitleConverter(transform.APStyle)
 	}
+}
+
+// waitSignal regist signals, return a done channel
+func waitSignal() <-chan bool {
+    sigs := make(chan os.Signal, 1)
+    done := make(chan bool, 1)
+
+    signal.Notify(sigs, syscall.SIGINT, syscal.SIGTERM)
+
+    go func() {
+        sig := <- sigs
+        log.Printf("recv sig: %v", sig)
+        done <- true
+    }()
+
+    return done
 }
 ```
