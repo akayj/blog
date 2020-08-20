@@ -1,7 +1,6 @@
 ---
 title: "代码高亮"
 date: 2019-12-03T16:19:07+08:00
-draft: true
 ---
 
 _Emacs_ style:
@@ -24,4 +23,3 @@ func GetTitleFunc(style string) func(s string) string {
 	}
 }
 ```
-
