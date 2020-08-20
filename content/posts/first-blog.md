@@ -19,6 +19,6 @@ __静态博客 + Markdown__ 满足我对简洁、足够强大通用、插件支�
 
 最终的选型如下:
 
-__http server__: [Caddy](https://caddyserver.com)
+__http server__: ~~*Caddy*~~ [nginx](https://nginx.org)
 
 __静态生成器__: [Hugo](https://gohugo.io/)
