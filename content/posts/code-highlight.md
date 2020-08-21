@@ -21,17 +21,17 @@ func GetTitleFunc(style string) func(s string) string {
 	}
 }
 
-// waitSignal regist signals, return a done channel
-func waitSignal() <-chan bool {
+// waitSignal regist quit signals, a done channel is returned
+// as signal receiver
+func waitSignal() <-chan os.Signal {
     sigs := make(chan os.Signal, 1)
-    done := make(chan bool, 1)
+    done := make(chan os.Signal)
 
     signal.Notify(sigs, syscall.SIGINT, syscal.SIGTERM)
 
     go func() {
         sig := <- sigs
-        log.Printf("recv sig: %v", sig)
-        done <- true
+        done <- sig
     }()
 
     return done
